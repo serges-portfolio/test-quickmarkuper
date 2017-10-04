@@ -1,0 +1,122 @@
+.header {
+  display: block;
+  width: 100%;
+  min-width: 320px;
+  height: 404px;
+  background-image: linear-gradient(to left, #35eef6 0%, #70269f 100%);
+  &__content {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+    margin-top: 4px;
+  }
+  &__logo {
+    width: 105px;
+    height: 26px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(-55deg, #35eef6 0%, #70269f 100%);
+    color: #34383d;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 26px;
+    float: left;
+    margin-left: 365px;
+    margin-top: 36px;
+  }
+  &__navigation-menu {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-top: 24px;
+  }
+  &__menu-item {
+    display: inline-block;
+    padding-right: 55px;
+    &:first-child {
+      margin-left: 330px;
+    }
+  }
+  @media all and (max-width: 1900px) {
+    &__menu-item {
+      &:first-child {
+        margin-left: 80px;
+      }
+    }
+  }
+  &__name-list {
+    color: #34383d;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+    &:after {
+      content: url("../images/chevron-in header.svg");
+      width: 11px;
+      height: 7px;
+      color: #606366;
+      padding-left: 4px;
+    }
+  }
+  &__menu-list {
+    position: absolute;
+    display: none;
+    padding-left: 0;
+    padding-top: 25px;
+    :hover {
+      transition: 1.1s;
+    }
+    & li {
+      & a {
+        display: block;
+        opacity: 0.7;
+        //border-top: 2px solid #ae2ca5;
+        //border-bottom: 1px solid #92908f;
+        //border-radius: 6px;
+        padding: 5px;
+        margin-top: 3px;
+        color: #ee6425;
+        text-decoration: none;
+        border: 1px solid transparent;
+        &:hover {
+          opacity: 1;
+          background-image: linear-gradient(45deg, #ff3cf0, #7c74c7, #ee6425);
+          border: 1px solid #ee6425;
+          color: whitesmoke;
+        }
+      }
+    }
+  }
+  &__menu-item:hover .header__menu-list {
+    display: block;
+    top: 20px;
+    list-style: none;
+    text-decoration: none;
+
+  }
+  &__menu-list:hover {
+    transition: 1s;
+  }
+  &__banner {
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 55px;
+    font-weight: 300;
+    line-height: 55px;ё
+    padding-top: 212px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 14px;
+  }
+  &__way {
+    color: #ecf0f1;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+  }
+}
