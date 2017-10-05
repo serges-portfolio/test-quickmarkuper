@@ -86,27 +86,31 @@
         <h3 class="header__way">Home > Portfolio > Sortable Masonry > 3 Columns</h3>
     </section>
 </header>
-<!--<main class="masonry">
-    <ul>
-        <li>
-            <a href="">All</a>
-        </li>
-        <li>
-            <a href="">3D</a>
-        </li>
-        <li>
-            <a href="">Illustration</a>
-        </li>
-        <li>
-            <a href="">Photography</a>
-        </li>
-        <li>
-            <a href="">Web</a>
-        </li>
-    </ul>
-    <button>Load More</button>
+<main class="isotope">
+    <div class="filter">
+            <a class="active filter-button" href="#" data-filter="*">All</a>
+            <a class="filter-button" href="#" data-filter=".3D">3D</a>
+            <a class="filter-button" href="#" data-filter=".Illustration">Illustration</a>
+            <a class="filter-button" href="#" data-filter=".photo">Photography</a>
+            <a class="filter-button" href="#" data-filter=".web">Web</a>
+        </div>
+    <div class="grid" data-isotope='{ "itemSelector": ".grid-item", "masonry": { "columnWidth": 398 } }'>
+                <!--<div class="image-container">-->
+        <div class="sizer">
+                <div class="grid-item 3D"><img src="images/masonry1.png" alt=""></div>
+                <div class="grid-item 3D"><img src="images/masonry2.png" alt=""></div>
+                <div class="grid-item 3D"><img src="images/masonry3.png" alt=""></div>
+                <div class="grid-item Illustration"><img src="images/masonry6.png" alt=""></div>
+                <div class="grid-item Illustration"><img src="images/masonry5.png" alt=""></div>
+                <div class="grid-item Illustration"><img src="images/masonry4.png" alt=""></div>
+                <div  class="grid-item web"><img src="images/masonry7.png" alt=""></div>
+                </div>
+    </div>
+    <div class="isotope__button-container">
+    <button class="isotope__load-more-button">Load More</button>
+    </div>
 </main>
-<footer class="footer">
+<!--<footer class="footer">
     <div>
         <h2>Shortly About Us</h2>
         <p>Vivamus eget nibh. Etiam cursus leo vel metus. Nulla
@@ -146,4 +150,6 @@
     </div>
 </footer>-->
 </body>
+<script src="node_modules/isotope-layout/dist/isotope.pkgd.min.js"></script>
+<script src="js/main.js"></script>
 </html>
