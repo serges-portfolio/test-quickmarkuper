@@ -1,0 +1,92 @@
+.contact {
+  display: block;
+  width: 100%;
+  height: 303px;
+  background-color: #ecf0f1; }
+  .contact__gradient {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-image: linear-gradient(to left, #35eef6 0%, #70269f 100%); }
+  .contact__about-us {
+    width: 386px;
+    height: 228px;
+    color: #606366;
+    float: left;
+    margin-left: 365px; }
+    .contact__about-us p {
+      width: 385px;
+      height: 87px;
+      color: #606366;
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 24px; }
+  .contact__us {
+    width: 446px;
+    height: 228px;
+    color: #606366;
+    float: left;
+    BACKGROUND-COLOR: #feff51; }
+    .contact__us :nth-child(5) {
+      float: right;
+      margin-top: -75px;
+      width: 150px; }
+    .contact__us :nth-child(6) {
+      float: right; }
+  .contact__social {
+    width: 263px;
+    height: 228px;
+    color: #606366;
+    float: left;
+    BACKGROUND-COLOR: #ff2f27; }
+  .contact__copyright {
+    clear: both;
+    display: block;
+    width: 100%;
+    height: 72px;
+    background-color: #bdc3c7; }
+    .contact__copyright h3 {
+      display: block;
+      width: 270px;
+      height: 18px;
+      color: #899096;
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 18px;
+      letter-spacing: 0.4px;
+      margin: 0 auto;
+      padding-top: 28px; }
+  .contact__banner {
+    color: #34383d;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 21px;
+    text-align: left;
+    padding-top: 33px; }
+  .contact__cordinats {
+    display: block;
+    max-width: 222px;
+    height: 45px;
+    /*&--number {
+      width: 25px;
+      height: 25px;
+      background: url(../images/sprite-contact-us.svg) 0 0px;
+      padding-left: 25px;
+    }*/ }
+    .contact__cordinats p {
+      width: 169px;
+      height: 25px;
+      color: #606366;
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 20px;
+      /* Text style for "info@compa" */
+      color: #34383d; }
+
+.fa {
+  color: #70269f;
+  background-color: red; }
