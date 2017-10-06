@@ -148,12 +148,15 @@
     width: 180px;
     height: 60px;
     background-color: aquamarine;
+
   }
   &__search-field {
     display: inline-block;
     width: 55px;
     height: auto;
     background-color: yellow;
+    opacity: 0;
+    margin-right: -50px;
   }
   &__search-button {
     display: inline-block;
@@ -161,9 +164,14 @@
     height: auto;
     background: none;
     margin-top: 20px;
+    outline: none;
+    border: none;
   }
-  &__search:hover &__search-field {
-    opacity: 0.1;
+  &__search:active &__search-field {
+    opacity: 1;
+    margin-right: 50px;
+    transition: 1s;
+
   }
   &__banner {
     color: #ffffff;

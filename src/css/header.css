@@ -123,15 +123,21 @@
     display: inline-block;
     width: 55px;
     height: auto;
-    background-color: yellow; }
+    background-color: yellow;
+    opacity: 0;
+    margin-right: -50px; }
   .header__search-button {
     display: inline-block;
     width: 55px;
     height: auto;
     background: none;
-    margin-top: 20px; }
-  .header__search:hover .header__search-field {
-    opacity: 0.1; }
+    margin-top: 20px;
+    outline: none;
+    border: none; }
+  .header__search:active .header__search-field {
+    opacity: 1;
+    margin-right: 50px;
+    transition: 1s; }
   .header__banner {
     color: #ffffff;
     font-family: Lato;
