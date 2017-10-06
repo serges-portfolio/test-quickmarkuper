@@ -37,9 +37,7 @@
       margin-left: 330px; }
   @media all and (max-width: 1900px) {
     .header__menu-item:first-child {
-      margin-left: 80px; }
-    .header__logo {
-      margin-left: 100px; } }
+      margin-left: 80px; } }
   .header__name-list {
     color: #34383d;
     font-family: Lato;
@@ -56,82 +54,31 @@
       padding-left: 4px; }
   .header__menu-list {
     position: absolute;
-    display: block;
-    opacity: 0;
-    top: -500em;
-    margin-top: 60px;
-    padding-top: 20px;
-    padding-left: 0; }
+    display: none;
+    padding-left: 0;
+    padding-top: 25px; }
     .header__menu-list :hover {
       transition: 1.1s; }
-    .header__menu-list li {
+    .header__menu-list li a {
       display: block;
-      width: 229px;
-      height: 45px;
-      border: 1px solid #ecf0f1;
-      border-right: none;
-      border-left: none; }
-      .header__menu-list li a {
-        display: block;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), inset 1px 0 0 #ecf0f1;
-        background-color: #ffffff;
-        padding: 14px 19px 14px 21px;
-        color: #34383d;
-        font-family: Lato;
-        font-size: 16px;
-        font-weight: 300;
-        text-decoration: none; }
-        .header__menu-list li a:hover {
-          background-color: #f7f9f9;
-          color: #41bedd; }
-        .header__menu-list li a:after {
-          content: url("../images/chevron-submenu.svg");
-          width: 8px;
-          height: 11px;
-          color: #606366;
-          float: right; }
-  .header__submenu-list {
-    position: absolute;
-    left: 188px;
-    opacity: 0;
-    margin-top: -53px; }
-    .header__submenu-list li {
-      display: block;
-      width: 239px;
-      height: 45px;
-      border-bottom: 2px solid #ecf0f1; }
-  .header__submenu-link:after {
-    opacity: 0; }
-  .header__link-to-submenu:hover .header__submenu-list {
-    opacity: 1;
-    transition: 0.4s; }
+      opacity: 0.7;
+      padding: 5px;
+      margin-top: 3px;
+      color: #ff1029;
+      text-decoration: none;
+      border: 1px solid transparent; }
+      .header__menu-list li a:hover {
+        opacity: 1;
+        background-image: linear-gradient(45deg, #ff3cf0, #7c74c7, #ee6425);
+        border: 1px solid #ee6425;
+        color: whitesmoke; }
   .header__menu-item:hover .header__menu-list {
-    opacity: 1;
+    display: block;
     top: 20px;
     list-style: none;
-    text-decoration: none;
-    transition: 0.8s; }
-  .header__menu-item:hover .header__name-list {
-    color: #41bedd;
-    transition: 0.8s; }
-  .header__search {
-    display: inline-block;
-    width: 180px;
-    height: 60px;
-    background-color: aquamarine; }
-  .header__search-field {
-    display: inline-block;
-    width: 55px;
-    height: auto;
-    background-color: yellow; }
-  .header__search-button {
-    display: inline-block;
-    width: 55px;
-    height: auto;
-    background: none;
-    margin-top: 20px; }
-  .header__search:hover .header__search-field {
-    opacity: 0.1; }
+    text-decoration: none; }
+  .header__menu-list:hover {
+    transition: 1s; }
   .header__banner {
     color: #ffffff;
     font-family: Lato;

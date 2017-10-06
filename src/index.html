@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/layout.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -43,20 +43,10 @@
             <div class="header__menu-item">
                 <p class="header__name-list">Portfolio</p>
                 <ul class="header__menu-list" href="#">
-                    <li><a href="">Classic </a></li>
-                    <li><a href="">Sortable grid with text</a></li>
-                    <li class="header__link-to-submenu">
-                        <a href="">  Sortable grid without text</a>
-                        <ul class="header__submenu-list">
-                            <li><a class="header__submenu-link" href="">2 columns</a></li>
-                            <li><a class="header__submenu-link" href=""> 2 columns with right sidebar </a></li>
-                            <li><a class="header__submenu-link" href="">3 columns</a></li>
-                            <li><a class="header__submenu-link" href=""> 3 columns with right sidebar</a></li>
-                            <li><a class="header__submenu-link" href="">4 columns</a></li>
-                        </ul>
-                    </li>
-                    <li><a href=""> Sortable masonry </a></li>
-                    <li><a href="">Single project pages</a></li>
+                    <li><a href="">PortfolioLink1</a></li>
+                    <li><a href="">PortfolioLink2</a></li>
+                    <li><a href="">PortfolioLink3</a></li>
+                    <li><a href="">PortfolioLink4</a></li>
                 </ul>
             </div>
             <div class="header__menu-item">
@@ -86,92 +76,79 @@
                     <li><a href="">ShortcodesLink4</a></li>
                 </ul>
             </div>
-            <div class="header__search">
-                <input class="header__search-field baba" type="search">
-                <button class="header__search-button"><img src="" alt="search"></button>
+            <div class="header__menu-search">
+                <a><img src="" alt=""></a>
             </div>
         </nav>
-
     </section>
     <section class="header__general">
         <h1 class="header__banner">3 Column Sortable Masonry Portfolio</h1>
         <h3 class="header__way">Home > Portfolio > Sortable Masonry > 3 Columns</h3>
     </section>
-    <i class="fa fa-camera-retro fa-5x"></i>
-
 </header>
 <main class="isotope">
     <div class="filter">
-        <a class="active filter-button" href="#" data-filter="*">All</a>
-        <a class="filter-button" href="#" data-filter=".3D">3D</a>
-        <a class="filter-button" href="#" data-filter=".Illustration">Illustration</a>
-        <a class="filter-button" href="#" data-filter=".photo">Photography</a>
-        <a class="filter-button" href="#" data-filter=".web">Web</a>
-    </div>
-    <div class="grid" data-isotope='{ "itemSelector": ".grid-item", "masonry": { "columnWidth": 398 } }'>
-        <!--<div class="image-container">-->
-        <div class="sizer">
-            <div class="grid-item 3D"><img src="images/masonry1.png" alt=""></div>
-            <div class="grid-item 3D"><img src="images/masonry2.png" alt=""></div>
-            <div class="grid-item 3D"><img src="images/masonry3.png" alt=""></div>
-            <div class="grid-item Illustration"><img src="images/masonry6.png" alt=""></div>
-            <div class="grid-item Illustration"><img src="images/masonry5.png" alt=""></div>
-            <div class="grid-item Illustration"><img src="images/masonry4.png" alt=""></div>
-            <div class="grid-item web"><img src="images/masonry7.png" alt=""></div>
+            <a class="active filter-button" href="#" data-filter="*">All</a>
+            <a class="filter-button" href="#" data-filter=".3D">3D</a>
+            <a class="filter-button" href="#" data-filter=".Illustration">Illustration</a>
+            <a class="filter-button" href="#" data-filter=".photo">Photography</a>
+            <a class="filter-button" href="#" data-filter=".web">Web</a>
         </div>
+    <div class="grid" data-isotope='{ "itemSelector": ".grid-item", "masonry": { "columnWidth": 398 } }'>
+                <!--<div class="image-container">-->
+        <div class="sizer">
+                <div class="grid-item 3D"><img src="images/masonry1.png" alt=""></div>
+                <div class="grid-item 3D"><img src="images/masonry2.png" alt=""></div>
+                <div class="grid-item 3D"><img src="images/masonry3.png" alt=""></div>
+                <div class="grid-item Illustration"><img src="images/masonry6.png" alt=""></div>
+                <div class="grid-item Illustration"><img src="images/masonry5.png" alt=""></div>
+                <div class="grid-item Illustration"><img src="images/masonry4.png" alt=""></div>
+                <div  class="grid-item web"><img src="images/masonry7.png" alt=""></div>
+                </div>
     </div>
     <div class="isotope__button-container">
-        <button class="isotope__load-more-button">Load More</button>
+    <button class="isotope__load-more-button">Load More</button>
     </div>
 </main>
-<footer class="contact">
-    <span class="contact__gradient"></span>
-    <div class="contact__about-us">
-        <h2 class="contact__banner">Shortly About Us</h2>
+<!--<footer class="footer">
+    <div>
+        <h2>Shortly About Us</h2>
         <p>Vivamus eget nibh. Etiam cursus leo vel metus. Nulla
             facilisi. Aenean nec eros. Vestibulum ante ipsum primis
             in faucibus orci luctus et ultrices posuere cubilia.
             Suspendisse sollicitudin velit sed leo.
-             <!--Ut pharetra augue nec augue.   Nam elit agna,endrerit
+             &lt;!&ndash;Ut pharetra augue nec augue.   Nam elit agna,endrerit
              sit amet, tincidunt ac, viverra sed, nulla. Donec porta
               diam eu massa. Quisque diam lorem, interdum vitae,
               dapibus ac, scelerisque vitae, pede. Donec eget
               tellus non erat lacinia fermentum.
               Donec in velit vel ipsum auctor pulvinar.
               Vestibulum iaculis lacinia est. Proin dictum
-              elementum velit. Fusce euismod consequat ante.--> </p>
+              elementum velit. Fusce euismod consequat ante.&ndash;&gt; </p>
     </div>
-    <div class="contact__us">
-        <h2 class="contact__banner">Contact Us</h2>
-        <span class="contact__cordinats contact__cordinats--number fa-stack fa-lg">
-            <i class="fa fa-quora fa-fw" aria-hidden="true"></i>
-            <!--<img class="contact__number" src="images/sprite-contact-us.svg" alt="">-->
-            <p>(123)-456-7890 </p>
-        </span>
-        <span class="contact__cordinats">
+    <div>
+        <h2>Contact Us</h2>
+        <span>
             <img src="" alt="">
-             <p>info@companyname.com </p>
-        </span>
-        <span class="contact__cordinats">
+            <p>(123)-456-7890 </p></span>
+        <span>
             <img src="" alt="">
-            <p>skype.name </p>
-        </span>
-        <span class="contact__cordinats">
+             <p>info@companyname.com </p></span>
+        <span>
             <img src="" alt="">
-            <p>8901 Marmora Road,  Glasgow, D04 89GR.</p>
-        </span>
-        <span class="contact__cordinats">
-        <a>Open in Google Maps</a>
-        </span>
+            <p>skype.name </p></span>
+        <span>
+            <img src="" alt="">
+            <p>8901 Marmora Road,  Glasgow, D04 89GR.</p></span>
+        <button>Open in Google Maps</button>
     </div>
-    <div class="contact__social">
-        <h2 class="contact__banner">Stay Connected</h2>
+    <div>
+        <h2>Stay Connected</h2>
     </div>
-    <div class="contact__copyright">
+    <div>
         <h3>© 2014 illusion. All Rights Reserved.</h3>
     </div>
-    <i class="fa fa-camera-retro fa-5x"></i>
-</footer>
+</footer>-->
 </body>
 <script src="node_modules/isotope-layout/dist/isotope.pkgd.min.js"></script>
 <script src="js/main.js"></script>
