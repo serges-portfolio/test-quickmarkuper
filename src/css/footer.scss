@@ -280,9 +280,6 @@
     &__about-us {
       margin-left: 25px;
     }
-    &__social {
-      margin-left: 15px;
-    }
     #top {
       right: 7%;
       bottom: 13px;
@@ -291,6 +288,9 @@
   @media all and (max-width: 1270px) {
     &__us {
       margin-left: 18px;
+    }
+    &__social {
+      margin-left: 15px;
     }
   }
   @media all and (max-width: 1186px) {

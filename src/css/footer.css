@@ -231,14 +231,14 @@
   @media all and (max-width: 1590px) {
     .contact__about-us {
       margin-left: 25px; }
-    .contact__social {
-      margin-left: 15px; }
     .contact #top {
       right: 7%;
       bottom: 13px; } }
   @media all and (max-width: 1270px) {
     .contact__us {
-      margin-left: 18px; } }
+      margin-left: 18px; }
+    .contact__social {
+      margin-left: 15px; } }
   @media all and (max-width: 1186px) {
     .contact__social {
       width: 100%;

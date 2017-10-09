@@ -206,6 +206,8 @@
       float: left; }
     .header__menu-item:first-child {
       margin-left: 30px; }
+    .header__menu-list {
+      margin-top: 70px; }
     .header__search {
       float: right;
       margin-top: -40px; } }
