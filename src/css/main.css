@@ -39,6 +39,7 @@ body {
   position: relative;
   margin: 0 auto;
   max-width: 1210px;
+  min-width: 480px;
   z-index: -1;
   height: auto; }
 
@@ -81,3 +82,15 @@ body {
     max-width: 330px;
     min-width: 145px;
     padding: 5px; } }
+
+@media all and (max-width: 1015px) {
+  .grid {
+    left: 20px; }
+  .sizer {
+    width: 50%; } }
+
+@media all and (max-width: 680px) {
+  .grid {
+    left: 0; }
+  .grid-item {
+    max-width: 300px; } }
