@@ -37,7 +37,7 @@
       margin-left: 330px; }
   .header__name-list {
     color: #34383d;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-size: 18px;
     font-weight: 300;
     line-height: 20px; }
@@ -72,7 +72,7 @@
         background-color: #ffffff;
         padding: 14px 19px 14px 21px;
         color: #34383d;
-        font-family: Lato;
+        font-family: Lato, sans-serif;
         font-size: 16px;
         font-weight: 300;
         text-decoration: none; }
@@ -160,7 +160,7 @@
     transition: 1s; }
   .header__banner {
     color: #ffffff;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-size: 55px;
     font-weight: 300;
     line-height: 55px;
@@ -170,7 +170,7 @@
     margin-bottom: 14px; }
   .header__way {
     color: #ecf0f1;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
@@ -197,7 +197,7 @@
       height: 110px; }
     .header__logo {
       margin-top: 20px;
-      margin-bottom: 0px; }
+      margin-bottom: 0; }
     .header__navigation-menu {
       padding-top: 10px;
       float: left; }
@@ -219,3 +219,41 @@
     .header__search {
       margin-top: -97px;
       float: right; } }
+  @media all and (max-width: 633px) {
+    .header__content {
+      height: auto;
+      position: relative; }
+    .header__logo {
+      float: left; }
+    .header__navigation-menu {
+      width: 150px;
+      clear: both; }
+    .header__menu-item:first-child {
+      margin-left: 10px; }
+    .header__menu-item {
+      display: block;
+      float: left;
+      margin-left: 10px; }
+    .header__name-list {
+      color: #e68155; }
+    .header__menu-list {
+      margin-top: 53px; }
+    .header__banner {
+      padding-top: 60px; }
+    .header__way {
+      max-width: 430px; }
+    .header__search {
+      margin-top: 0;
+      clear: both;
+      position: absolute;
+      right: 0;
+      top: 5px; }
+    .header .search-area {
+      background-color: transparent;
+      border-bottom: 2px solid #e68155; }
+    .header .fa-search {
+      background-color: rgba(75, 230, 227, 0.85);
+      opacity: 0.8; }
+    .header .fa-search:hover {
+      background-color: #ff5061;
+      transition: 0.8s; } }

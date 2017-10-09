@@ -1,3 +1,5 @@
+@mixin font {font-family: Lato, sans-serif;}
+
 .header {
   display: block;
   width: 100%;
@@ -28,6 +30,7 @@
     margin-left: 365px;
     margin-top: 36px;
   }
+                        // Блок меню
   &__navigation-menu {
     width: 100%;
     height: auto;
@@ -42,7 +45,7 @@
   }
   &__name-list {
     color: #34383d;
-    font-family: Lato;
+    @include font;
     font-size: 18px;
     font-weight: 300;
     line-height: 20px;
@@ -81,7 +84,7 @@
         background-color: #ffffff;
         padding: 14px 19px 14px 21px;
         color: #34383d;
-        font-family: Lato;
+        @include font;
         font-size: 16px;
         font-weight: 300;
         text-decoration: none;
@@ -131,11 +134,11 @@
     color: #41bedd;
     transition: 0.8s;
   }
+                     // Блок с полем поиска
   &__search {
     display: inline-block;
     width: 210px;
     height: 43px;
-    //float: left;
   }
   .fa-search {
     border: 2px solid #bdc3c7;
@@ -195,7 +198,7 @@
   }
   &__banner {
     color: #ffffff;
-    font-family: Lato;
+    @include font;
     font-size: 55px;
     font-weight: 300;
     line-height: 55px;
@@ -206,12 +209,13 @@
   }
   &__way {
     color: #ecf0f1;
-    font-family: Lato;
+    @include font;
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
     text-align: center;
   }
+                          // Адаптив
   @media all and (max-width: 1900px) {
     &__menu-item {
       &:first-child {
@@ -249,7 +253,7 @@
     }
     &__logo {
       margin-top: 20px;
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
     &__navigation-menu {
       padding-top: 10px;
@@ -281,6 +285,58 @@
     &__search {
       margin-top: -97px;
       float: right;
+    }
+  }
+  @media all and (max-width: 633px) {
+    &__content {
+      height: auto;
+      position: relative;
+    }
+    &__logo {
+      float: left;
+    }
+    &__navigation-menu {
+      width: 150px;
+      clear: both;
+    }
+    &__menu-item:first-child {
+      margin-left: 10px;
+    }
+    &__menu-item {
+      display: block;
+      float: left;
+      margin-left: 10px;
+    }
+    &__name-list {
+      color: #e68155;
+    }
+    &__menu-list {
+      margin-top: 53px;
+    }
+    &__banner {
+      padding-top: 60px;
+    }
+    &__way {
+      max-width: 430px;
+    }
+    &__search {
+      margin-top: 0;
+      clear: both;
+      position: absolute;
+      right: 0;
+      top: 5px;
+    }
+    .search-area {
+      background-color: transparent;
+      border-bottom: 2px solid #e68155;
+    }
+    .fa-search {
+      background-color: rgba(75, 230, 227, 0.85);
+      opacity: 0.8;
+    }
+    .fa-search:hover {
+      background-color: #ff5061;
+      transition: 0.8s;
     }
   }
 }

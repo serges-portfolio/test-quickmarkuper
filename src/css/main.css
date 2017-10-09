@@ -1,7 +1,8 @@
 body {
   display: block;
   width: 100%;
-  min-width: 320px; }
+  min-width: 320px;
+  overflow-x: hidden; }
 
 .filter {
   display: block;
@@ -20,7 +21,7 @@ body {
   text-decoration: none;
   padding: 14px 32px;
   color: #34383d;
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-size: 14px;
   font-weight: 400; }
 
@@ -65,7 +66,7 @@ body {
   margin: 0 auto;
   padding: 12px 31px;
   color: #34383d;
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-size: 14px;
   font-weight: 400; }
   .isotope__load-more-button:hover {
@@ -94,3 +95,20 @@ body {
     left: 0; }
   .grid-item {
     max-width: 300px; } }
+
+@media all and (max-width: 633px) {
+  .filter {
+    min-width: 470px;
+    padding-left: 4%; }
+  .filter-button {
+    padding: 14px 22px; }
+  .sizer {
+    width: 100%; }
+  .grid-item {
+    width: 100%;
+    padding: 0;
+    margin-left: 25%; } }
+
+@media all and (max-width: 480px) {
+  .grid-item {
+    margin-left: 17%; } }

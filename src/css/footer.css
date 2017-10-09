@@ -2,24 +2,7 @@
   display: block;
   width: 100%;
   height: auto;
-  background-color: #ecf0f1;
-  /*&__cordinats {
-    display: block;
-
-
-  }
-  &__find-us {
-    display: block;
-    width: 200px;
-    height: 25px;
-    color: #606366;
-    font-family: Lato;
-    font-size: 16px;
-    font-weight: 300;
-    margin-bottom: 0px;
-    !* Text style for "info@compa" *!
-    color: #34383d;
-  }*/ }
+  background-color: #ecf0f1; }
   .contact__gradient {
     display: block;
     width: 100%;
@@ -36,7 +19,7 @@
       width: 385px;
       height: 87px;
       color: #606366;
-      font-family: Lato;
+      font-family: Lato, sans-serif;
       font-size: 16px;
       font-weight: 300;
       line-height: 24px; }
@@ -56,7 +39,7 @@
   .contact .fa-ul {
     color: #606366;
     font-size: 16px;
-    margin-left: 0px; }
+    margin-left: 0; }
     .contact .fa-ul li {
       max-width: 180px; }
       .contact .fa-ul li:before {
@@ -70,19 +53,19 @@
     margin-top: 5px; }
   .contact .fa-map-marker:first-child {
     margin-left: 24px; }
-  .contact .pp {
+  .contact .requisites {
     display: block;
     max-width: 180px;
     height: 18px;
     margin-left: 30px;
     margin-top: -26px;
     font-family: Lato, sans-serif; }
-  .contact .lastli {
+  .contact .location {
     float: right;
     width: 200px;
     margin-top: -110px;
     margin-right: 16px; }
-    .contact .lastli i {
+    .contact .location i {
       padding-left: 2px;
       padding-top: 1px; }
   .contact__open-gmaps {
@@ -213,7 +196,7 @@
       width: 270px;
       height: 18px;
       color: #899096;
-      font-family: Lato;
+      font-family: Lato, sans-serif;
       font-size: 16px;
       font-weight: 300;
       line-height: 18px;
@@ -222,7 +205,7 @@
       padding-top: 28px; }
   .contact__banner {
     color: #34383d;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-size: 20px;
     font-weight: 300;
     line-height: 21px;
@@ -257,6 +240,11 @@
       height: auto; }
     .contact__social {
       padding-left: 0; } }
+  @media all and (max-width: 680px) {
+    .contact__about-us, .contact__us, .contact__social {
+      margin-left: 5%; }
+    .contact__social {
+      max-width: 350px; } }
 
 #top {
   position: fixed;

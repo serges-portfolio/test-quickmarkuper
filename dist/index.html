@@ -11,20 +11,20 @@
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/layout.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <!--[для корректной работы IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <![end IE 9]-->
 </head>
 <body>
 <header class="header">
     <section class="header__content">
-        <h2 class="header__logo">illusion</h2>
+        <a href="#"><h2 class="header__logo">illusion</h2></a>
         <nav class="header__navigation-menu">
             <div class="header__menu-item">
                 <p class="header__name-list">Home</p>
-                <ul class="header__menu-list" href="#">
+                <ul class="header__menu-list">
                     <li><a href="">HomeLink1</a></li>
                     <li><a href="">HomeLink2</a></li>
                     <li><a href="">HomeLink3</a></li>
@@ -33,7 +33,7 @@
             </div>
             <div class="header__menu-item">
                 <p class="header__name-list">Pages</p>
-                <ul class="header__menu-list" href="#">
+                <ul class="header__menu-list">
                     <li><a href="">PagesLink1</a></li>
                     <li><a href="">PagesLink2</a></li>
                     <li><a href="">PagesLink3</a></li>
@@ -42,7 +42,7 @@
             </div>
             <div class="header__menu-item">
                 <p class="header__name-list">Portfolio</p>
-                <ul class="header__menu-list" href="#">
+                <ul class="header__menu-list">
                     <li><a href="">Classic </a></li>
                     <li><a href="">Sortable grid with text</a></li>
                     <li class="header__link-to-submenu">
@@ -61,7 +61,7 @@
             </div>
             <div class="header__menu-item">
                 <p class="header__name-list">Blog</p>
-                <ul class="header__menu-list" href="#">
+                <ul class="header__menu-list">
                     <li><a href="">BlogLink1</a></li>
                     <li><a href="">BlogLink2</a></li>
                     <li><a href="">BlogLink3</a></li>
@@ -70,7 +70,7 @@
             </div>
             <div class="header__menu-item">
                 <p class="header__name-list">Features</p>
-                <ul class="header__menu-list" href="#">
+                <ul class="header__menu-list">
                     <li><a href="">FeaturesLink1</a></li>
                     <li><a href="">FeaturesLink2</a></li>
                     <li><a href="">FeaturesLink3</a></li>
@@ -79,7 +79,7 @@
             </div>
             <div class="header__menu-item">
                 <p class="header__name-list">Shortcodes</p>
-                <ul class="header__menu-list" href="#">
+                <ul class="header__menu-list">
                     <li><a href="">ShortcodesLink1</a></li>
                     <li><a href="">ShortcodesLink2</a></li>
                     <li><a href="">ShortcodesLink3</a></li>
@@ -87,12 +87,12 @@
                 </ul>
             </div>
             <div class="header__search">
-                        <div class="outgoing-panel">
-                                <input class="search-area" autofocus placeholder="Find me..." type="search">
-                        </div>
-                        <button class="search-field search-field--location">
-                                <i class="fa fa-search" aria-hidden="true"></i>
-                        </button>
+                <div class="outgoing-panel">
+                    <input class="search-area" autofocus placeholder="Find me..." type="search">
+                </div>
+                <button class="search-field search-field--location">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
             </div>
         </nav>
 
@@ -127,7 +127,7 @@
 </main>
 <footer class="contact">
     <span class="contact__gradient"></span>
-    <div class="contact__about-us">
+    <div class="contact__about-us contact__description">
         <h2 class="contact__banner">Shortly About Us</h2>
         <p>Vivamus eget nibh. Etiam cursus leo vel metus. Nulla
             facilisi. Aenean nec eros. Vestibulum ante ipsum primis
@@ -142,17 +142,29 @@
               Vestibulum iaculis lacinia est. Proin dictum
               elementum velit. Fusce euismod consequat ante.--> </p>
     </div>
-    <div class="contact__us">
+    <div class="contact__us contact__description">
         <h2 class="contact__banner">Contact Us</h2>
         <ul class="fa-ul">
-            <li><i class="fa-li fa fa-phone"></i><p class="pp">(123)-456-7890</p></li>
-            <li><i class="fa-li fa fa-envelope"></i><p class="pp">info@companyname.com </p></li>
-            <li><i class="fa-li fa fa-skype"></i><p class="pp">skype.name </p></li>
-            <li class="lastli"><i class="fa-li fa fa-map-marker"></i><p class="pp">8901 Marmora Road,  Glasgow, D04 89GR.</p></li>
+            <li>
+                <i class="fa-li fa fa-phone"></i>
+                <p class="requisites">(123)-456-7890</p>
+            </li>
+            <li>
+                <i class="fa-li fa fa-envelope"></i>
+                <p class="requisites">info@companyname.com </p>
+            </li>
+            <li>
+                <i class="fa-li fa fa-skype"></i>
+                <p class="requisites">skype.name </p>
+            </li>
+            <li class="location">
+                <i class="fa-li fa fa-map-marker"></i>
+                <p class="requisites">8901 Marmora Road,  Glasgow, D04 89GR.</p>
+            </li>
         </ul>
         <a class="contact__open-gmaps" href="https://goo.gl/maps/ZkGPxW2WDst">Open in Google Maps</a>
     </div>
-    <div class="contact__social">
+    <div class="contact__social contact__description">
         <h2 class="contact__banner">Stay Connected</h2>
         <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
         <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -173,8 +185,7 @@
     <a href="#" id="top" onclick="return up()"><img class="arrow" src="images/up-arrow.svg" alt=""></a>
 </footer>
 </body>
-<script src="js/isotope.pkgd.min.js"></script>
-<script src="js/masonry.pkgd.min.js"></script>
+<script src="node_modules/isotope-layout/dist/isotope.pkgd.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/scroll2.js"></script>
 <script src="js/show-search.js"></script>

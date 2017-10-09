@@ -1,12 +1,14 @@
+@mixin font {font-family: Lato, sans-serif;}
+
 body {
   display: block;
   width: 100%;
   min-width: 320px;
+  overflow-x:hidden;
 }
 .filter {
   display: block;
   max-width: 544px;
-  //min-width: 320px;
   max-height: 800px;
   margin: 0 auto;
   font-size: 0;
@@ -21,7 +23,7 @@ body {
   text-decoration: none;
   padding: 14px 32px;
   color: #34383d;
-  font-family: Lato;
+  @include font;
   font-size: 14px;
   font-weight: 400;
 }
@@ -43,8 +45,6 @@ body {
   min-width: 480px;
   z-index: -1;
   height: auto;
-  //max-height: 746px;
-  //min-height: 350px;
 }
 .grid-item {
   padding: 14px;
@@ -68,7 +68,7 @@ body {
   margin: 0 auto;
   padding: 12px 31px;
   color: #34383d;
-  font-family: Lato;
+  @include font;
   font-size: 14px;
   font-weight: 400;
   &:hover {
@@ -102,5 +102,27 @@ body {
   }
   .grid-item {
     max-width: 300px;
+  }
+}
+@media all and (max-width: 633px){
+  .filter {
+    min-width: 470px;
+    padding-left: 4%;
+  }
+  .filter-button {
+    padding: 14px 22px;
+  }
+  .sizer {
+    width: 100%;
+  }
+  .grid-item {
+    width: 100%;
+    padding: 0;
+    margin-left: 25%;
+  }
+}
+@media all and (max-width: 480px) {
+  .grid-item {
+    margin-left: 17%;
   }
 }
